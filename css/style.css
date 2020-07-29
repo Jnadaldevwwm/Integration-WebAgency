@@ -37,7 +37,7 @@ h1::first-letter,h2::first-letter,h3::first-letter{
 
 .header {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.397);
   position: fixed;
   width: 100%;
   z-index: 3000;
@@ -182,10 +182,13 @@ h1::first-letter,h2::first-letter,h3::first-letter{
   border-image: 
     linear-gradient(
       to bottom,
-      black,
+      #DCFAE3,
       rgba(0, 0, 0, 0)
     ) 1 100%
     ;
+}
+.slide-content h2{
+  
 }
 
 /* @media (max-width: 767px){
@@ -210,7 +213,7 @@ h1::first-letter,h2::first-letter,h3::first-letter{
 }
 #slides {
   padding: 30px;
-  border: 3px solid #ccc;
+  border: 3px solid #DCFAE3;
   background: #fff;
   position: relative;
   z-index: 1;
@@ -227,9 +230,6 @@ h1::first-letter,h2::first-letter,h3::first-letter{
 }
 #slide3:checked ~ #slides .inner {
   margin-left: -200%;
-}
-#slide4:checked ~ #slides .inner {
-  margin-left: -300%;
 }
 #slides .inner {
   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
@@ -277,7 +277,7 @@ h1::first-letter,h2::first-letter,h3::first-letter{
 #slide1:checked ~ #controls label:nth-child(2),
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/130/130884.svg") no-repeat;
   float:right;
   margin: 0 -50px 0 0;
   display: block;
@@ -285,7 +285,7 @@ h1::first-letter,h2::first-letter,h3::first-letter{
 #slide1:checked ~ #controls label:nth-last-child(1),
 #slide2:checked ~ #controls label:nth-last-child(3),
 #slide3:checked ~ #controls label:nth-last-child(2) {
-  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/130/130882.svg") no-repeat;
   float:left;
   margin: 0 0 0 -50px;
   display: block;
@@ -299,7 +299,7 @@ h1::first-letter,h2::first-letter,h3::first-letter{
   width: 10px;
   height: 10px;
   border-radius:100%;
-  background: #ccc;
+  background: #4EC2C7;
   margin: 0 10px;
 }
 #slide1:checked ~ #bullets label:nth-child(1),
@@ -317,9 +317,15 @@ h1::first-letter,h2::first-letter,h3::first-letter{
    {
      margin: 0;
   }
+ 
   #slides {
      max-width: calc(100% - 140px);
      margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px){
+  #slider{
+    width: 1000px;
   }
 }
 
@@ -388,6 +394,10 @@ h1::first-letter,h2::first-letter,h3::first-letter{
   }
 }
 
+#portfolio div{
+  margin-bottom: -5px;
+}
+
 /**************** Contact Sec ******************************************************/
 .justify-center{
   justify-content: center;
@@ -410,9 +420,12 @@ form{
 }
 #form-cont input{
   margin-bottom: 10px;
+  border-color: #DCFAE3;
+  border-style: groove;
 }
 #form-cont input[type=submit]{
   width: 300px;
+  padding: 5px 0;
 }
 #msg{
   width: 350px;
@@ -449,4 +462,11 @@ footer{
   color: #DCFAEA;
   padding: 2%;
   margin-top: 4%;
+}
+
+.text-small{
+  font-size: 0.7rem;
+}
+.mt-8{
+  margin-top: 8%;
 }
