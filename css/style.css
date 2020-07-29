@@ -40,7 +40,7 @@ h1::first-letter,h2::first-letter,h3::first-letter{
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 3000;
 }
 
 .header ul {
@@ -311,9 +311,9 @@ h1::first-letter,h2::first-letter,h3::first-letter{
   #slide1:checked ~ #controls label:nth-child(2),
   #slide2:checked ~ #controls label:nth-child(3),
   #slide3:checked ~ #controls label:nth-child(1),
-  #slide1:checked ~ #controls label:nth-last-child(2),
+  #slide1:checked ~ #controls label:nth-last-child(1),
   #slide2:checked ~ #controls label:nth-last-child(3),
-  #slide3:checked ~ #controls label:nth-last-child(1)
+  #slide3:checked ~ #controls label:nth-last-child(2)
    {
      margin: 0;
   }
