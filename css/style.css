@@ -282,9 +282,9 @@ h1::first-letter,h2::first-letter,h3::first-letter{
   margin: 0 -50px 0 0;
   display: block;
 }
-#slide1:checked ~ #controls label:nth-last-child(2),
+#slide1:checked ~ #controls label:nth-last-child(1),
 #slide2:checked ~ #controls label:nth-last-child(3),
-#slide3:checked ~ #controls label:nth-last-child(1) {
+#slide3:checked ~ #controls label:nth-last-child(2) {
   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   float:left;
   margin: 0 0 0 -50px;
