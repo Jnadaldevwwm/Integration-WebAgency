@@ -8,6 +8,7 @@
     <title>WebAgency</title>
 </head>
 <body>
+  <!--***************************** NAVBAR ***********************************************-->
     <header class="header">
         <a href="" class="logo"><img src="images/logo-webagency.png" alt="Logo"></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -19,5 +20,145 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </header>
+  <!--***************************** Slider de qualité *************************************-->
+  <!-- <div id="slider">
+    <input type="radio" id="show_slide1" name="slider_commands">
+    <input type="radio" id="show_slide2" name="slider_commands">
+    <input type="radio" id="show_slide3" name="slider_commands">
+    <input type="radio" id="play_slider" name="slider_commands">
+  
+    <div id="slides">
+      <figure id="slide1">
+        <img src="https://i.postimg.cc/BZDYtgsp/bled-2608425-1920.jpg
+                  " alt="Village au bord d'un lac">
+        <figcaption>WebAgency : L'agence de tout vos projets</figcaption>
+      </figure>
+      <figure id="slide2">
+        <img src="https://i.postimg.cc/nhdTNSYF/mountain-landscape-2031539-1920.jpg
+                  " alt="Paysage de montagne">
+        <figcaption>Paysage de montagne</figcaption>
+      </figure>
+      <figure id="slide3">
+        <img src="https://i.postimg.cc/15sHX1vR/road-1072823-1920.jpg
+                  " alt="Forêt en automne">
+        <figcaption>Forêt en automne</figcaption>
+      </figure>
+    </div>
+    <nav>
+      <ul class="dots_commands">
+        <li><label for="show_slide1">Slide 1</label></li>
+        <li><label for="show_slide2">Slide 2</label></li>
+        <li><label for="show_slide3">Slide 3</label></li>
+      </ul>
+      <label for="play_slider" aria-label="Play" id="play" title="Play">Play</label>
+    </nav>
+  </div> -->
+  <!--***************************** Slider 2.0 *************************************-->
+  <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <div id="slides">
+      <div id="overflow">
+        <div class="inner">
+          <div class="slide slide_1">
+            <div class="slide-content">
+              <h2>WEBAGENCY : L'AGENCE DE TOUT VOS PROJETS !</h2>
+              <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser ! </p>
+            </div>
+          </div>
+          <div class="slide slide_2">
+            <div class="slide-content">
+              <h2>Slide 2</h2>
+              <p>Content for slide 2</p>
+            </div>
+          </div>
+          <div class="slide slide_3">
+            <div class="slide-content">
+              <h2>Slide 3</h2>
+              <p>Content for slide 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+  </div>
+  <div id="bullets">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
+
+<!--***************************** Section services *************************************-->
+
+<section id="services" class="d-flex">
+  <div class="w100">
+    <div class="div m-auto text-center">
+      <h2>Nos services</h2>
+      <p> Agence web implantée à Paris, nous vous accompagnons dans la création de sites internet et de supports de communication adaptés à votre cible et à vore personnalité.</p>
+    </div>
+  </div>
+  <article class="text-center">
+    <h3>UX design</h3>
+    <p>L'ergonomie est au coeur de notre philosophie. Nos site wweb sont avant tout pensés pour être intuitifs et faciles à utiliser.</p>
+  </article>
+  <article class="text-center">
+    <h3>UI design</h3>
+    <p>Pour rendre l’expérience de navigation la plus intuitive possible, nos sites présentent des interfaces au design fonctionnel, esthétique et cohérent.</p>
+  </article>
+  <article class="text-center">
+    <h3>SEO</h3>
+    <p>Le référencement est la clé de survie d’un site web. Nous attachons ainsi une importance toute particulière à vous fournir une rédaction web de qualité.</p>
+  </article>
+</section>
+
+<!--***************************** Section projets *************************************-->
+
+<section id="projet" class="">
+  <div class="text-center p2">
+    <h2>Nos Projets</h2>
+    <p>Avec plus de 200 projets réalisés depuis sa création, la WebAgency s’appuie sur un large éventail de compétences pour satisfaire de nombreux clients convaincus.</p>
+  </div>
+  <div id="portfolio" class="d-flex">
+    <div><img src="images/projet-1-webdesign.jpg" alt="image" class="img-fluid"></div>
+    <div><img src="images/projet-2-site-web.jpg" alt="image" class="img-fluid"></div>
+    <div><img src="images/projet-3-design.jpg" alt="image" class="img-fluid"></div>
+    <div><img src="images/projet-4-graphisme.jpg" alt="image" class="img-fluid"></div>
+    <div><img src="images/projet-5-site-web.jpg" alt="image" class="img-fluid"></div>
+    <div><img src="images/projet-6-webdesign.jpg" alt="image" class="img-fluid"></div>
+    <div><img src="images/projet-7-logo.jpg" alt="image" class="img-fluid"></div>
+    <div><img src="images/projet-8-graphisme.jpg" alt="image" class="img-fluid"></div>
+  </div>
+</section>
+
+<!--***************************** Section contact *************************************-->
+
+<section id="contact" class="d-flex">
+  <div id="carte">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1691.8560028419404!2d2.349194241550818!3d48.87316731234853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1596012055394!5m2!1sfr!2sfr" width="600" height="650" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-fluid"></iframe>
+  </div>
+  <div id="formulaire" class="w100 d-flex justify-center">
+    <form action="" id="form-cont" method="post" class="d-flex justify-center flex-col align-center">
+    
+        <input type="text" name="Nom" id="Nom" placeholder="Votre nom">
+
+        <input type="text" name="Prenom" id="Prenom" placeholder="Votre Prenom">
+
+        <input type="mail" name="email" id="email" placeholder="Votre adresse mail">
+
+        <input type="text-area" name="msg" id="msg" placeholder="Message">
+
+        <input type="submit" value="Contacter">
+    </form>
+  </div>
+</section>
+<footer class="text-center">
+  <span>Copyright Julien Nadal-Larios</span>
+</footer>
 </body>
 </html>
